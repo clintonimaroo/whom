@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import ChatForm from "../components/ChatForm.astro";
+import ChatMessages from "../components/ChatMessages.astro";
+import Loader from "../components/Loader.astro";
+---
+
+<BaseLayout>
+  <Header />
+  <main class="p-4">
+    <h1 class="text-center text-2xl">Welcome To The Chatroom</h1>
+    <p class="text-center opacity-60">
+      This week is about to become lit! Grab your popcorn, it is time to watch
+      more with less data.
+    </p>
+    <ChatMessages />
+    <ChatForm />
+  </main>
+  <Loader />
+</BaseLayout>
